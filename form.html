@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Application form for AltSchool Africa">
+  <title>Apply Here | AltSchool Application Form</title>
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Global navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html" aria-current="page">Apply Here</a></li>
+      </ul>
+    </nav>
+    <h1>AltSchool Africa Application Form</h1>
+  </header>
+
+  <main>
+    <p>Fields marked with an asterisk (*) are required.</p>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <p>
+          <label for="first-name">First name *</label><br>
+          <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+        </p>
+
+        <p>
+          <label for="last-name">Last name *</label><br>
+          <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+        </p>
+
+        <p>
+          <label for="email">Email address *</label><br>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="phone">Phone number *</label><br>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+        </p>
+
+        <p>
+          <label for="dob">Date of birth *</label><br>
+          <input type="date" id="dob" name="dob" required>
+        </p>
+
+        <fieldset>
+          <legend>Gender *</legend>
+          <p>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Prefer not to say</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="country">Country of residence *</label><br>
+          <select id="country" name="country" required>
+            <option value="">-- Select a country --</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+            <option value="south-africa">South Africa</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Program Details</legend>
+
+        <p>
+          <label for="school">Choose a school *</label><br>
+          <select id="school" name="school" required>
+            <option value="">-- Select a school --</option>
+            <option value="engineering">School of Engineering</option>
+            <option value="product">School of Product</option>
+            <option value="data">School of Data</option>
+            <option value="cybersecurity">School of Cybersecurity</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="level">Current experience level</label><br>
+          <select id="level" name="level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="motivation">Why do you want to join AltSchool? *</label><br>
+          <textarea id="motivation" name="motivation" rows="5" cols="40" required></textarea>
+        </p>
+
+        <p>
+          <label for="source">How did you hear about us?</label><br>
+          <input type="text" id="source" name="source">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account</legend>
+
+        <p>
+          <label for="password">Create password *</label><br>
+          <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+        </p>
+
+        <p>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the terms and conditions *</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset</button>
+      </p>
+
+    </form>
+  </main>
+
+  <footer>
+    <address>
+      lawan kamale<br>
+      1 Gimbiya Street, Garki, Abuja, Nigeria
+    </address>
+    <p><small>&copy; 2026 Lawan Kamale. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>
